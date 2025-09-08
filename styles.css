@@ -1,0 +1,179 @@
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Caja de login */
+.login-box {
+  background-color: #181818;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  margin-bottom: 1.5rem;
+}
+
+.circle {
+  background: #1db954; /* Verde estilo Spotify */
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 10px;
+  font-size: 1.5rem;
+}
+
+/* Botones sociales */
+.social-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.social-buttons button {
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.google { background: #fff; color: #000; }
+.facebook { background: #3b5998; color: #fff; }
+.apple { background: #000; color: #fff; border: 1px solid #555; }
+
+hr {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 1.5rem 0;
+}
+
+/* Inputs */
+form {
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  background: #282828;
+  color: #fff;
+}
+
+input:focus {
+  outline: 1px solid #1db954;
+}
+
+/* Opciones */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.options a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Botón login */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #1db954;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #1aa34a;
+}
+
+/* Registro */
+.register {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.register a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+  .login-box {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .social-buttons button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  label {
+    font-size: 0.85rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .login-btn {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+}
